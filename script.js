@@ -134,9 +134,10 @@ window.onload = function () {
     
 
 }
-// there needs to be one of these sections for every hour block
-// this changes the text area into a text input field once the user clicks on the 
+// there is a function for each hour block
+// the functions dynamically change the  textarea into a text input field once the user clicks on the 
 // textarea. Once the user clicks outside of the input, the input shoudl revert back to a textarea
+// at the end of each section the content is saved to local storage
 
 function nine(){
 $("#textarea-parent-one").on("click", "textarea", function() {
