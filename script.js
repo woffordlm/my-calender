@@ -9,88 +9,89 @@ console.log(currentDay.textContent)
 var now = moment().format("HH:mm:ss");
 console.log(now);
 
+
 // this function makes the background color of the time blocks change depending on the time
 function audit() {
     // color coding the 9am block
-    if (now>="09:00:00"){
+    if (now>="09:00:00" && now<"10:00:00"){
         
         $("#textarea-parent-one").addClass("present");
     }
-    else if (now >="09:00:00" ) {
+    else if (now >="10:00:00" ) {
         $("#textarea-parent-one").addClass("past");
     }
     else if (now<"09:00:00"){
         $("#textarea-parent-one").addClass("future");
     }
     
-        if (now>="10:00:00"){
+        if (now>="10:00:00"&& now<"11:00:00"){
             
             $("#textarea-parent-two").addClass("present");
         }
-        else if (now >="10:00:00" ) {
+        else if (now >="11:00:00" ) {
             $("#textarea-parent-two").addClass("past");
         }
         else if (now<"10:00:00"){
             $("#textarea-parent-two").addClass("future");
         }
-        if (now>="11:00:00"){
+        if (now>="11:00:00"&& now<"12:00:00"){
             
             $("#textarea-parent-three").addClass("present");
         }
-        else if (now >="11:00:00" ) {
+        else if (now >="12:00:00" ) {
             $("#textarea-parent-three").addClass("past");
         }
         else if (now<"11:00:00"){
             $("#textarea-parent-three").addClass("future");
         }
-        if (now>="12:00:00"){
+        if (now>="12:00:00"&& now<"13:00:00"){
             
             $("#textarea-parent-four").addClass("present");
         }
-        else if (now >="12:00:00" ) {
+        else if (now >="13:00:00" ) {
             $("#textarea-parent-four").addClass("past");
         }
-        else if (now<"12:00:00"){
+        else if (now<"13:00:00"){
             $("#textarea-parent-four").addClass("future");
         }
-        if (now>="01:00:00"){
+        if (now>="13:00:00" && now<"14:00:00"){
             
             $("#textarea-parent-five").addClass("present");
         }
-        else if (now >="01:00:00" ) {
+        else if (now >="14:00:00" ) {
             $("#textarea-parent-five").addClass("past");
         }
-        else if (now<"01:00:00"){
+        else if (now<"13:00:00"){
             $("#textarea-parent-five").addClass("future");
         }
-        if (now>="02:00:00"){
+        if (now>="14:00:00" && now<"15:00:00"){
             
             $("#textarea-parent-six").addClass("present");
         }
-        else if (now >="02:00:00" ) {
+        else if (now >="15:00:00" ) {
             $("#textarea-parent-six").addClass("past");
         }
-        else if (now<"02:00:00"){
+        else if (now<"14:00:00"){
             $("#textarea-parent-six").addClass("future");
         }
-        if (now>="03:00:00"){
+        if (now>="15:00:00" && now<"16:00:00"){
             
             $("#textarea-parent-seven").addClass("present");
         }
-        else if (now >="03:00:00" ) {
+        else if (now >="16:00:00" ) {
             $("#textarea-parent-seven").addClass("past");
         }
-        else if (now<"03:00:00"){
+        else if (now<"15:00:00"){
             $("#textarea-parent-seven").addClass("future");
         }
-        if (now>="04:00:00"){
+        if (now>="16:00:00" && now<"17:00:00"){
             
             $("#textarea-parent-eight").addClass("present");
         }
-        else if (now >="04:00:00" ) {
+        else if (now >="17:00:00" ) {
             $("#textarea-parent-eight").addClass("past");
         }
-        else if (now<"04:00:00"){
+        else if (now<"16:00:00"){
             $("#textarea-parent-eight").addClass("future");
         }
     }
@@ -130,6 +131,7 @@ window.onload = function () {
     two();
     three();
     four();
+    
 
 }
 // there needs to be one of these sections for every hour block
