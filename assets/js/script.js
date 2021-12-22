@@ -12,89 +12,65 @@ console.log(now);
 
 // this function makes the background color of the time blocks change depending on the time
 function audit() {
+    console.log(now)
     // color coding the 9am block
     if (now>="09:00:00" && now<"10:00:00"){
-        
         $("#textarea-parent-one").addClass("present");
-    }
-    else if (now >="10:00:00" ) {
+    } else if (now >="10:00:00" ) {
         $("#textarea-parent-one").addClass("past");
-    }
-    else if (now<"09:00:00"){
+    } else if (now<"09:00:00"){
         $("#textarea-parent-one").addClass("future");
     }
-    
-        if (now>="10:00:00"&& now<"11:00:00"){
-            
-            $("#textarea-parent-two").addClass("present");
-        }
-        else if (now >="11:00:00" ) {
-            $("#textarea-parent-two").addClass("past");
-        }
-        else if (now<"10:00:00"){
-            $("#textarea-parent-two").addClass("future");
-        }
-        if (now>="11:00:00"&& now<"12:00:00"){
-            
-            $("#textarea-parent-three").addClass("present");
-        }
-        else if (now >="12:00:00" ) {
-            $("#textarea-parent-three").addClass("past");
-        }
-        else if (now<"11:00:00"){
-            $("#textarea-parent-three").addClass("future");
-        }
-        if (now>="12:00:00"&& now<"13:00:00"){
-            
-            $("#textarea-parent-four").addClass("present");
-        }
-        else if (now >="13:00:00" ) {
-            $("#textarea-parent-four").addClass("past");
-        }
-        else if (now<"13:00:00"){
-            $("#textarea-parent-four").addClass("future");
-        }
-        if (now>="13:00:00" && now<"14:00:00"){
-            
-            $("#textarea-parent-five").addClass("present");
-        }
-        else if (now >="14:00:00" ) {
-            $("#textarea-parent-five").addClass("past");
-        }
-        else if (now<"13:00:00"){
-            $("#textarea-parent-five").addClass("future");
-        }
-        if (now>="14:00:00" && now<"15:00:00"){
-            
-            $("#textarea-parent-six").addClass("present");
-        }
-        else if (now >="15:00:00" ) {
-            $("#textarea-parent-six").addClass("past");
-        }
-        else if (now<"14:00:00"){
-            $("#textarea-parent-six").addClass("future");
-        }
-        if (now>="15:00:00" && now<"16:00:00"){
-            
-            $("#textarea-parent-seven").addClass("present");
-        }
-        else if (now >="16:00:00" ) {
-            $("#textarea-parent-seven").addClass("past");
-        }
-        else if (now<"15:00:00"){
-            $("#textarea-parent-seven").addClass("future");
-        }
-        if (now>="16:00:00" && now<"17:00:00"){
-            
-            $("#textarea-parent-eight").addClass("present");
-        }
-        else if (now >="17:00:00" ) {
-            $("#textarea-parent-eight").addClass("past");
-        }
-        else if (now<"16:00:00"){
-            $("#textarea-parent-eight").addClass("future");
-        }
+    if (now>="10:00:00"&& now<"11:00:00"){   
+        $("#textarea-parent-two").addClass("present");
+    } else if (now >="11:00:00" ) {
+        $("#textarea-parent-two").addClass("past");
+    } else if (now<"10:00:00"){
+        $("#textarea-parent-two").addClass("future");
     }
+    if (now>="11:00:00"&& now<"12:00:00"){    
+        $("#textarea-parent-three").addClass("present");
+    } else if (now >="12:00:00" ) {
+        $("#textarea-parent-three").addClass("past");
+    }else if (now<"11:00:00"){
+        $("#textarea-parent-three").addClass("future");
+    }
+    if (now>="12:00:00"&& now<"13:00:00"){
+         $("#textarea-parent-four").addClass("present");
+    } else if (now >="13:00:00" ) {
+        $("#textarea-parent-four").addClass("past");
+    } else if (now<"13:00:00"){
+        $("#textarea-parent-four").addClass("future");
+    }
+    if (now>="13:00:00" && now<"14:00:00"){     
+        $("#textarea-parent-five").addClass("present");
+    } else if (now >="14:00:00" ) {
+        $("#textarea-parent-five").addClass("past");
+    } else if (now<"13:00:00"){
+        $("#textarea-parent-five").addClass("future");
+    }
+    if (now>="14:00:00" && now<"15:00:00"){
+        $("#textarea-parent-six").addClass("present");
+    } else if (now >="15:00:00" ) {
+        $("#textarea-parent-six").addClass("past");
+    } else if (now<"14:00:00"){
+        $("#textarea-parent-six").addClass("future");
+    }
+    if (now>="15:00:00" && now<"16:00:00"){
+        $("#textarea-parent-seven").addClass("present");
+    } else if (now >="16:00:00" ) {
+        $("#textarea-parent-seven").addClass("past");
+    } else if (now<"15:00:00"){
+        $("#textarea-parent-seven").addClass("future");
+    }
+    if (now>="16:00:00" && now<"17:00:00"){
+        $("#textarea-parent-eight").addClass("present");
+    }else if (now >="17:00:00" ) {
+        $("#textarea-parent-eight").addClass("past");
+    } else if (now<"16:00:00"){
+        $("#textarea-parent-eight").addClass("future");
+    }
+}
 
 // this loads all of the tasks from local storage
 
@@ -131,8 +107,6 @@ window.onload = function () {
     two();
     three();
     four();
-    
-
 }
 // there is a function for each hour block
 // the functions dynamically change the  textarea into a text input field once the user clicks on the 
